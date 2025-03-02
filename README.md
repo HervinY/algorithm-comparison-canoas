@@ -4,15 +4,15 @@ Este repositorio contiene el código, datos y resultados de un estudio empírico
 
 ## Descripción del Problema
 
-El problema de alquiler de canoas consiste en encontrar la forma más económica de alquilar una canoa para viajar entre *n* puertos a lo largo de un río.  Existe un costo por alquilar una canoa entre cualquier par de puertos, y el objetivo es minimizar el costo total del viaje desde el puerto 1 hasta el puerto *n*. No es posible viajar río arriba. Se asume que no es más barato ir directo que hacer escalas.
+El problema de alquiler de canoas consiste en encontrar la forma más económica de alquilar una canoa para viajar entre *n* puertos a lo largo de un río.  Existe un costo por alquilar una canoa entre cualquier par de puertos, y el objetivo es minimizar el costo total del viaje desde el puerto 1 hasta el puerto *$n$*. No es posible viajar río arriba. Se asume que no es más barato ir directo que hacer escalas.
 
 ## Algoritmos Implementados
 
 Se implementaron y compararon los siguientes algoritmos:
 
-1.  **Fuerza Bruta (Recursivo):** Explora todas las posibles combinaciones de alquileres de forma recursiva.  Tiene una complejidad temporal exponencial, O(2^n).
+1.  **Fuerza Bruta (Recursivo):** Explora todas las posibles combinaciones de alquileres de forma recursiva.  Tiene una complejidad temporal exponencial, $O(2^n).$
 2.  **Recursión con Memoización (Top-Down):**  Utiliza una tabla de memoización para almacenar los resultados de subproblemas ya calculados, evitando recálculos innecesarios.  Tiene una complejidad temporal de $O(n^2).$
-3.  **Programación Dinámica (Bottom-Up):**  Resuelve el problema de forma iterativa, construyendo la solución desde los subproblemas más pequeños hasta el problema completo.  Tiene una complejidad temporal de O(n^2).
+3.  **Programación Dinámica (Bottom-Up):**  Resuelve el problema de forma iterativa, construyendo la solución desde los subproblemas más pequeños hasta el problema completo.  Tiene una complejidad temporal de $O(n^2)$.
 
 ## Estructura del Repositorio
 
@@ -46,7 +46,7 @@ Los archivos se pueden descargar desde el repositorio
 ## Resultados Principales
 
 
-*   La programación dinámica (DP) y la recursión con memoización son significativamente más rápidas que la fuerza bruta, como se esperaba teóricamente (O(n^2) vs. O(2^n)).
+*   La programación dinámica ($DP$) y la recursión con memoización son significativamente más rápidas que la fuerza bruta, como se esperaba teóricamente ($O(n^2)$ vs. $O(2^n)$).
 *   La programación dinámica es ligeramente más rápida que la recursión con memoización y usa menos memoria.
 *   (Incluye aquí tus resultados específicos, con números y comparaciones).
 *   (Incluye una breve discusión sobre las diferencias entre `psutil` y `tracemalloc`).
