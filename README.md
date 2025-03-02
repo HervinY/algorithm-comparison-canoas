@@ -47,11 +47,17 @@ Los archivos se pueden descargar desde el repositorio
 
 ## Resultados Principales
 
+1. **Superioridad de $DP$**:  
+   - $\mathbf{98.4\%}$ más rápido que Brute y $\mathbf{34.2\%}$ más eficiente que Memo hasta $n=14$.  
+   - Ventaja se amplía a $\mathbf{1.8\times}$ menor tiempo que Memo en $n=50$.
 
-*   La programación dinámica ($DP$) y la recursión con memoización son significativamente más rápidas que la fuerza bruta, como se esperaba teóricamente ($O(n^2)$ vs. $O(2^n)$).
-*   La programación dinámica es ligeramente más rápida que la recursión con memoización y usa menos memoria.
-*   (Incluye aquí tus resultados específicos, con números y comparaciones).
-*   (Incluye una breve discusión sobre las diferencias entre `psutil` y `tracemalloc`).
+2. **Elección de Librerías de Medición**:  
+   - Las diferencias psutil-tracemalloc muestran que **los valores absolutos dependen de la instrumentación**, pero las tendencias relativas se mantienen.
+
+3. **Implicaciones Prácticas**:  
+   - En aplicaciones críticas donde se necesite excesiva precisión, **$DP$ es óptimo** por garantizar $O(n^2)$ con menor huella de memoria.  
+   - Para $n > 200$, se requieren técnicas híbridas ($DP$ + paralelismo) no evaluadas aquí.
+
 
 ## Herramientas y Librerías
 
