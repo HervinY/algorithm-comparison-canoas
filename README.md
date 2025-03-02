@@ -26,7 +26,9 @@ proyecto-alquiler-canoas/
 │ └── resultados_optimizados2.csv
 ├── notebooks/
 │ └── proyecto_canoas_analisis.ipynb
-├── src/
+├── docs/
+│ ├── proyecto_canoas_analisis.html
+│ └── proyecto_canoas_analisis.pdf
 └── README.md
 
 
