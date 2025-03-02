@@ -11,7 +11,7 @@ El problema de alquiler de canoas consiste en encontrar la forma más económica
 Se implementaron y compararon los siguientes algoritmos:
 
 1.  **Fuerza Bruta (Recursivo):** Explora todas las posibles combinaciones de alquileres de forma recursiva.  Tiene una complejidad temporal exponencial, O(2^n).
-2.  **Recursión con Memoización (Top-Down):**  Utiliza una tabla de memoización para almacenar los resultados de subproblemas ya calculados, evitando recálculos innecesarios.  Tiene una complejidad temporal de O(n^2).
+2.  **Recursión con Memoización (Top-Down):**  Utiliza una tabla de memoización para almacenar los resultados de subproblemas ya calculados, evitando recálculos innecesarios.  Tiene una complejidad temporal de $O(n^2).$
 3.  **Programación Dinámica (Bottom-Up):**  Resuelve el problema de forma iterativa, construyendo la solución desde los subproblemas más pequeños hasta el problema completo.  Tiene una complejidad temporal de O(n^2).
 
 ## Estructura del Repositorio
